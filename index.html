@@ -1,1 +1,289 @@
-temp
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSCI 13500</title>
+<style>
+  body {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #111;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px 80px;
+  }
+
+  a { color: #00e; }
+  a:visited { color: #551a8b; }
+
+  h1 { font-size: 20px; font-weight: bold; margin: 0 0 4px; }
+  h2 { font-size: 15px; font-weight: bold; margin: 32px 0 8px; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
+
+  p { margin: 6px 0; }
+
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th { text-align: left; border-bottom: 2px solid #999; padding: 4px 8px; }
+  td { padding: 5px 8px; vertical-align: top; border-bottom: 1px solid #eee; }
+  tr.exam td { font-weight: bold; }
+
+  .links { margin: 12px 0; }
+  .links a { margin-right: 12px; white-space: nowrap; }
+
+  footer { margin-top: 48px; border-top: 1px solid #ccc; padding-top: 12px; font-size: 13px; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>CSCI 13500 Software Analysis & Design I</h1>
+<p>Hunter College, City University of New York &mdash; Summer 2026</p>
+
+<div class="links">
+  <a href="sum26_csci135_syllabus.pdf">Syllabus</a>
+  <a href="https://www.gradescope.com/courses/1302957">Gradescope</a>
+  <a href="https://maryash.github.io/135/worked_examples/style_guide.html">Style Guide</a>
+</div>
+
+<h2>Course Information</h2>
+
+<p><strong>Lecture:</strong> Tuesday Thursday 9:50 AM &ndash; 12:10 PM, North Bldg 1001C</p>
+<p><strong>Instructor:</strong> Adrian Mysliwiec &mdash; <a href="mailto:adrian.mysliwiec13@myhunter.cuny.edu">adrian.mysliwiec13@myhunter.cuny.edu</a></p>
+<!-- <p><strong>Office Hours:</strong> Monday, Wednesday 11:00 AM &ndash; 12:00 PM, Room 1000B</p> -->
+<!-- <p><strong>Tutoring:</strong> Mon, Wed 11:30 AM &ndash; 5:30 PM &nbsp;|&nbsp; Tue, Thu 11:30 AM &ndash; 5:30 PM &nbsp;&mdash;&nbsp; North Bldg 1001B</p> -->
+<p><strong>Text:</strong> <a href="https://www.vitalsource.com/products/brief-c-late-objects-enhanced-etext-cay-s-horstmann-v9781119400424">Brief C++, 3rd ed. eText</a> &mdash; rent the eText for one semester</p>
+
+<!-- <p>You must get hands-on programming help in person during lab or from tutors. All email questions must include your section, lab instructor's name, your name, and EMPLID.</p> -->
+
+<h2>Recitation Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Time</th>
+      <th>Location</th>
+      <th>Instructor</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#">1R01</a></td>
+      <td>Tue Thur 12:30&ndash;2:03 PM</td>
+      <td>North Bldg 1001C</td>
+      <td>Adrian Mysliwiec</td>
+      <td><a href="mailto:adrian.mysliwiec13@myhunter.cuny.edu">adrian.mysliwiec13@myhunter.cuny.edu</a></td>
+    </tr>
+    <!-- <tr>
+      <td><a href="#">1R02</a></td>
+      <td>Mon 3:00&ndash;4:50 PM</td>
+      <td>North Bldg 1001C</td>
+      <td>Maria Chen</td>
+      <td><a href="mailto:m.chen@myhunter.cuny.edu">m.chen@myhunter.cuny.edu</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">1R03</a></td>
+      <td>Wed 3:00&ndash;4:50 PM</td>
+      <td>North Bldg 1001C</td>
+      <td>Maria Chen</td>
+      <td><a href="mailto:m.chen@myhunter.cuny.edu">m.chen@myhunter.cuny.edu</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">1R04</a></td>
+      <td>Fri 10:00&ndash;11:50 AM</td>
+      <td>North Bldg 1001C</td>
+      <td>Sam Rivera</td>
+      <td><a href="mailto:s.rivera@myhunter.cuny.edu">s.rivera@myhunter.cuny.edu</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">1R05</a></td>
+      <td>Thu 9:30&ndash;11:20 AM</td>
+      <td>North Bldg 1001B</td>
+      <td>Dana Park</td>
+      <td><a href="mailto:d.park@myhunter.cuny.edu">d.park@myhunter.cuny.edu</a></td>
+    </tr> -->
+  </tbody>
+</table>
+
+<h2>Course Outline</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:60px">Date</th>
+      <th style="width:180px">Topic</th>
+      <th>Slides</th>
+      <th>Due Dates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5/28</td>
+      <td>Introduction &amp; Setup</td>
+      <td><a href="#">1.5</a> &nbsp;<a href="#">1.6</a> &nbsp;<a href="#">1.7</a></td>
+      <td><a href="#">Lab 1: Hello World</a> 2/8</td>
+    </tr>
+    <tr>
+      <td>6/2</td>
+      <td>Variables &amp; Arithmetic</td>
+      <td><a href="#">2.1</a> &nbsp;<a href="#">2.2</a> &nbsp;<a href="#">2.3&ndash;4</a></td>
+      <td><a href="#">WE 2.1</a> &nbsp;<a href="#">WE 2.2</a><br><a href="#">Project 1</a> 2/14 &rarr; 3/7</td>
+    </tr>
+    <tr>
+      <td>6/4</td>
+      <td>Conditions &amp; Decisions</td>
+      <td><a href="#">3.1</a> &nbsp;<a href="#">3.2</a> &nbsp;<a href="#">3.3&ndash;4</a></td>
+      <td><a href="#">Lab 2: Loops &amp; Arrays</a> 2/15</td>
+    </tr>
+    <tr>
+      <td>6/9</td>
+      <td>Loops</td>
+      <td><a href="#">4.1</a> &nbsp;<a href="#">4.2&ndash;3</a> &nbsp;<a href="#">4.4&ndash;5</a></td>
+      <td><a href="#">WE 4.1</a> &nbsp;<a href="#">WE 4.2</a><br><a href="#">Lab 3: File I/O</a> 2/22</td>
+    </tr>
+    <tr>
+      <td>6/11</td>
+      <td>More Loops</td>
+      <td><a href="#">4.6&ndash;8</a> &nbsp;<a href="#">4.9&ndash;10</a></td>
+      <td><a href="#">Lab 4: Printing Shapes</a> 3/1</td>
+    </tr>
+    <tr>
+      <td>6/16</td>
+      <td>Arrays</td>
+      <td><a href="#">6.1</a></td>
+      <td><a href="#">WE 6.1</a></td>
+    </tr>
+    <tr>
+      <td>6/18</td>
+      <td>Nested Loops</td>
+      <td><a href="#">4.6&ndash;8</a></td>
+      <td><a href="#">Lab 5: Functions</a> 3/8</td>
+    </tr>
+    <tr>
+      <td>6/23</td>
+      <td>Strings</td>
+      <td><a href="#">2.5</a></td>
+      <td><a href="#">Lab 6: Strings &amp; Ciphers</a> 3/15<br><a href="#">Project 2</a> 3/21 &rarr; 4/18</td>
+    </tr>
+    <tr>
+      <td>6/25</td>
+      <td>Functions, Scope, Static Vars</td>
+      <td><a href="#">5.1&ndash;3</a> &nbsp;<a href="#">5.4&ndash;6</a> &nbsp;<a href="#">5.7</a> &nbsp;<a href="#">5.8</a></td>
+      <td><a href="#">WE 5.1</a> &nbsp;<a href="#">WE 5.2</a> &nbsp;<a href="#">WE 5.3</a></td>
+    </tr>
+    <tr>
+      <td>6/30</td>
+      <td>Review for Midterm</td>
+      <td><a href="#">Midterm Review (color)</a> &nbsp;<a href="#">(b&amp;w)</a></td>
+      <td><a href="#">Lab 7: Automatic Style</a> 3/22</td>
+    </tr>
+    <tr>
+      <td>7/2</td>
+      <td>Review for Midterm</td>
+      <td><a href="#">Slides</a></td>
+      <td></td>
+    </tr>
+    <tr class="exam">
+      <td>7/7</td>
+      <td>MIDTERM EXAM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7/9</td>
+      <td>Common Array Algorithms</td>
+      <td><a href="#">6.2</a> &nbsp;<a href="#">6.3</a> &nbsp;<a href="#">6.4&ndash;5</a></td>
+      <td><a href="#">WE 6.2</a></td>
+    </tr>
+    <tr>
+      <td>7/14</td>
+      <td>2D Arrays</td>
+      <td><a href="#">6.6</a></td>
+      <td><a href="#">Lab 8: Image Processing</a> 3/29</td>
+    </tr>
+    <tr>
+      <td>7/16</td>
+      <td>Random Numbers</td>
+      <td><a href="#">Slides</a></td>
+      <td><a href="#">Lab 9: Pointers</a> 4/12</td>
+    </tr>
+     <tr>
+      <td>7/17</td>
+      <td>Pointers &amp; Arrays</td>
+      <td><a href="#">7.1</a> &nbsp;<a href="#">7.2</a></td>
+      <td><a href="#">WE 7.1</a><br><a href="#">Project 3</a> 5/13</td>
+    </tr>
+    <!--
+    <tr>
+      <td>4/13</td>
+      <td>Dynamic Memory</td>
+      <td><a href="#">7.4</a> &nbsp;<a href="#">7.5&ndash;6</a></td>
+      <td><a href="#">Lab 10: Classes &amp; Enums</a> 4/19</td>
+    </tr>
+    <tr>
+      <td>4/15</td>
+      <td>Classes of Objects</td>
+      <td><a href="#">7.7&ndash;8</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4/20</td>
+      <td>OOP &amp; Simple Classes</td>
+      <td><a href="#">9.1&ndash;2</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4/22</td>
+      <td>Enumerations &amp; Classes</td>
+      <td><a href="#">9.3&ndash;5</a></td>
+      <td><a href="#">Lab 11: More Classes</a> 4/26</td>
+    </tr>
+    <tr>
+      <td>4/27</td>
+      <td>Vectors</td>
+      <td><a href="#">6.7</a></td>
+      <td><a href="#">Lab 12: Vectors</a> 5/3</td>
+    </tr>
+    <tr>
+      <td>4/29</td>
+      <td>Classes &amp; Constructors</td>
+      <td><a href="#">9.6</a> &nbsp;<a href="#">9.9</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5/4</td>
+      <td>Recursion</td>
+      <td><a href="#">Slides</a></td>
+      <td><a href="#">Lab 13</a> 5/10</td>
+    </tr>
+    <tr>
+      <td>5/6</td>
+      <td>More Recursion &amp; Switch</td>
+      <td><a href="#">Slides</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5/11</td>
+      <td>Review</td>
+      <td><a href="#">Final Review (color)</a> &nbsp;<a href="#">(b&amp;w)</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5/13</td>
+      <td>Review</td>
+      <td></td>
+      <td></td>
+    </tr> -->
+    <tr class="exam">
+      <td>7/21</td>
+      <td>FINAL EXAM &mdash; 9:50 AM &ndash; 12:10 PM</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <p><a href="#">Cheat Sheet (given on exam)</a> &nbsp;&middot;&nbsp; <a href="#">Old Finals</a> &nbsp;&middot;&nbsp; <a href="#">Old Midterms</a></p> -->
+</body>
+</html>
